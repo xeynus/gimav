@@ -6003,9 +6003,19 @@ header {
   width: 100%;
   z-index: 20;
 }
+header .container-fluid {
+  padding: 0 40px;
+}
 header .navbar-brand {
-  padding: 6px 15px;
+  margin-right: 40px;
+  padding: 8px 15px;
   height: auto;
+}
+header .navbar-brand img {
+  width: 90px;
+}
+header .logo-cont {
+  width: auto;
 }
 header .navbar-default {
   margin-bottom: 0;
@@ -6024,11 +6034,62 @@ header .navbar-default .navbar-nav li {
 header .navbar-default .navbar-nav li a:link,
 header .navbar-default .navbar-nav li a:visited {
   display: block;
-  padding-left: 30px;
-  padding-right: 30px;
-  background: ;
+  padding: 15px 40px;
   color: #ffffff;
-  font-size: ;
+  font-size: 1.6rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: #023262;
+}
+header .navbar-default .navbar-nav li a:link:before,
+header .navbar-default .navbar-nav li a:visited:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098d1;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+header .navbar-default .navbar-nav li a:link:hover,
+header .navbar-default .navbar-nav li a:visited:hover,
+header .navbar-default .navbar-nav li a:link:focus,
+header .navbar-default .navbar-nav li a:visited:focus,
+header .navbar-default .navbar-nav li a:link:active,
+header .navbar-default .navbar-nav li a:visited:active {
+  color: white;
+}
+header .navbar-default .navbar-nav li a:link:hover:before,
+header .navbar-default .navbar-nav li a:visited:hover:before,
+header .navbar-default .navbar-nav li a:link:focus:before,
+header .navbar-default .navbar-nav li a:visited:focus:before,
+header .navbar-default .navbar-nav li a:link:active:before,
+header .navbar-default .navbar-nav li a:visited:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+header .navbar-default .navbar-nav li a:link:before,
+header .navbar-default .navbar-nav li a:visited:before {
+  background: #104b85;
 }
 header .navbar-default .navbar-nav li a:link:hover,
 header .navbar-default .navbar-nav li a:visited:hover,
@@ -6036,11 +6097,18 @@ header .navbar-default .navbar-nav li a:link:active,
 header .navbar-default .navbar-nav li a:visited:active,
 header .navbar-default .navbar-nav li a:link:focus,
 header .navbar-default .navbar-nav li a:visited:focus {
-  color: ;
+  color: #ffffff;
 }
 header .navbar-default .navbar-nav li a:link svg,
 header .navbar-default .navbar-nav li a:visited svg {
   fill: #ffffff;
+}
+header .navbar-default .navbar-nav li a:link span,
+header .navbar-default .navbar-nav li a:visited span {
+  position: relative;
+  top: -6px;
+  display: inline-block;
+  padding-left: 15px;
 }
 header .navbar-default .navbar-nav li.active {
   border-bottom: 2px solid #a8a8a8;
@@ -6077,6 +6145,21 @@ header .navbar-default .navbar-nav li.open a:link {
   background: #012549;
   color: #ffffff;
 }
+header .navbar-default .navbar-nav .menu-usuario {
+  position: absolute;
+  right: 0px;
+  margin-right: 0;
+}
+header .navbar-default .navbar-nav .menu-usuario .dropdown-menu {
+  padding: 0;
+  margin: 0;
+  width: 215px;
+}
+header .navbar-default .navbar-nav .menu-usuario a:link,
+header .navbar-default .navbar-nav .menu-usuario a:visited {
+  padding: 11px 20px;
+  width: 100%;
+}
 header .navbar-default .navbar-toggle {
   background: ;
   border: ;
@@ -6112,156 +6195,20 @@ header .navbar-default .navbar-toggle:hover .icon-bar {
   -o-transition: background 0.3s ease-out;
   transition: background 0.3s ease-out;
 }
-/*********************
-HEADER CON REDES SOCIALES
-*********************/
 /* 
-FOOTER
+USUARIO
 =============================================================
 */
-footer {
-  background: ;
-}
-footer p {
-  color: ;
-}
-/*************** Columns ***************/
-#footer-columns {
-  padding: ;
-}
-#footer-columns a:link,
-#footer-columns a:visited {
-  color: ;
-}
-#footer-columns a:link:hover,
-#footer-columns a:visited:hover,
-#footer-columns a:link:active,
-#footer-columns a:visited:active {
-  color: ;
-  text-decoration: none;
-}
-/*************** Copyright ***************/
-#copyright {
-  padding: ;
-  background: ;
-  text-align: ;
-}
-#copyright p {
-  color: ;
-}
-#copyright a:link,
-#copyright a:visited {
-  color: ;
-}
-#copyright a:link:hover,
-#copyright a:visited:hover,
-#copyright a:link:active,
-#copyright a:visited:active {
-  color: ;
-  text-decoration: ;
-}
-/*************** Footer redes ***************/
-.footer-redes li {
-  display: inline-block;
-  margin-right: ;
-}
-.footer-redes li a:link,
-.footer-redes li a:visited {
-  background: ;
-}
-.footer-redes li a:link svg,
-.footer-redes li a:visited svg {
-  width: ;
-  height: ;
-}
-.footer-redes li a:link svg .icono,
-.footer-redes li a:visited svg .icono {
-  fill: ;
-}
-.boton-ge {
-  position: relative;
-  color: #ffffff;
-  display: inline-block;
-  padding: 15px;
-  border: 3px solid #666666;
-  margin-bottom: 100px;
-}
-.boton-ge::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #000000;
+#logo-gimav {
+  position: fixed;
+  display: table;
   width: 100%;
-  height: 100%;
-  z-index: -1;
-  filter: alpha(opacity=1);
-  /* internet explorer */
-  -khtml-opacity: 1;
-  /* khtml, old safari */
-  -moz-opacity: 1;
-  /* mozilla, netscape */
-  opacity: 1;
-  /* fx, safari, opera */
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  height: 88%;
+  text-align: center;
 }
-.boton-ge:hover::after {
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-  filter: alpha(opacity=0);
-  /* internet explorer */
-  -khtml-opacity: 0;
-  /* khtml, old safari */
-  -moz-opacity: 0;
-  /* mozilla, netscape */
-  opacity: 0;
-  /* fx, safari, opera */
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-/*************** Botón Arriba ***************/
-.boton-arriba a:link,
-.boton-arriba a:visited {
-  background: ;
-  color: ;
-}
-.boton-arriba a:link span,
-.boton-arriba a:visited span {
-  color: ;
-}
-.boton-arriba a:link svg,
-.boton-arriba a:visited svg {
-  fill: ;
-}
-.boton-arriba a:link:hover,
-.boton-arriba a:visited:hover,
-.boton-arriba a:link:active,
-.boton-arriba a:visited:active {
-  background: ;
-  color: ;
-}
-.boton-arriba a:link:hover span,
-.boton-arriba a:visited:hover span,
-.boton-arriba a:link:active span,
-.boton-arriba a:visited:active span {
-  color: ;
-}
-.boton-arriba a:link:hover svg,
-.boton-arriba a:visited:hover svg,
-.boton-arriba a:link:active svg,
-.boton-arriba a:visited:active svg {
-  fill: ;
+#logo-gimav figure {
+  display: table-cell;
+  vertical-align: middle;
 }
 /* 
 UNO
@@ -6370,20 +6317,6 @@ TABS
   /*********************
 HEADER
 *********************/
-  header .navbar-default .navbar-nav {
-    display: table;
-    width: 100%;
-  }
-  header .navbar-default .navbar-nav li {
-    display: table-cell;
-    width: 20%;
-    text-align: center;
-  }
-  header .navbar-default .navbar-nav li a:link,
-  header .navbar-default .navbar-nav li a:visited {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 /* Tablet Widescreen */
 @media only screen and (min-width: 992px) {
@@ -6416,20 +6349,12 @@ SLIDER
   /*********************
 HEADER
 *********************/
-  header .navbar-default .navbar-nav li a:link,
-  header .navbar-default .navbar-nav li a:visited {
-    font-size: 1.7rem;
-  }
 }
 /* Desktop */
 @media only screen and (min-width: 1200px) {
   /*********************
 HEADER
 *********************/
-  header .navbar-default .navbar-nav li a:link,
-  header .navbar-default .navbar-nav li a:visited {
-    font-size: 1.7rem;
-  }
 }
 /* Widescreen */
 @media only screen and (min-width: 1440px) {

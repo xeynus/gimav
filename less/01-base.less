@@ -138,11 +138,25 @@ header {
 	width: 100%;
 	z-index: 20;
 
+	.container-fluid {
+		padding: 0 40px;
+	}
+
 // Logo
 	.navbar-brand {
 		// Sólo se cambia el primer valor
-		padding: 6px 15px;
+		margin-right: 40px;
+		padding: 8px 15px;
+		// width: 90px;
 		height: auto;
+
+		img {
+			width: 90px;
+		}
+	}
+
+	.logo-cont {
+		width: auto;
 	}
 
 // Toggle
@@ -161,22 +175,34 @@ header {
 			li {
 				a:link, a:visited {
 					display: block;
-					padding-left: 30px;
-					padding-right: 30px;
-					background: ;
+					padding: 15px 40px;
+					
 					color: @blanco;
-					font-size: ;
+					font-size: 1.6rem;
 					// .transition(background);
+					.sweep-to-bottom;
+					background: @azul;
+
+					&:before {
+						background: @azul-light;
+					}
 
 					&:hover, &:active, &:focus {
 						// background: @gris-40;
-						color: ;
+						color: @blanco;
 						// .transition(background); 
 					}  
 
 					svg {
 						fill: @blanco;
-					}   
+					}
+
+					span {
+						position: relative;
+						top: -6px;
+						display: inline-block;
+						padding-left: 15px;
+					} 
 				}
 
 				&.active {
@@ -210,6 +236,23 @@ header {
 					}
 				}
 			}
+
+			.menu-usuario {
+				position: absolute;
+				right: 0px;
+				margin-right: 0;
+
+				.dropdown-menu {
+					padding: 0;
+					margin: 0; 
+					width: 215px;
+				}
+
+				a:link, a:visited {
+					padding: 11px 20px;
+					width: 100%;
+				}
+			}
 		}
 
 // Botón
@@ -237,133 +280,23 @@ header {
 	}
 }
 
-/*********************
-HEADER CON REDES SOCIALES
-*********************/  
-#header-redes {
-
-}
-
 /* 
-FOOTER
+USUARIO
 =============================================================
 */
-footer {
-	background: ;
-
-	p {
-		color: ;
+#logo-gimav {
+	position: fixed;
+	display: table;
+	width: 100%;
+	height: 88%;
+	text-align: center;
+	
+	figure {
+		display: table-cell;
+		vertical-align: middle;
 	}
+	
 }
-
-/*************** Columns ***************/
-#footer-columns {
-	padding: ;
-
-	.footer-column {
-
-	}
-
-	a:link, a:visited {
-		color: ;
-
-		&:hover, &:active {
-			color: ;
-			text-decoration: none;
-		}
-	}
-}
-
-/*************** Copyright ***************/
-#copyright {
-	padding: ;
-	background: ;
-	text-align: ;
-
-	p {
-		color: ;
-	}
-
-	a:link, a:visited {
-		color: ;
-
-		&:hover, &:active {
-			color: ;
-			text-decoration: ;
-		}
-	}
-}
-
-.copyright-first {
-
-}
-
-.copyright-second {
-
-}
-
-/*************** Footer redes ***************/
-.footer-redes {
-	li {
-		display: inline-block;
-		margin-right: ;
-
-		a:link, a:visited {
-			background: ;
-
-			svg {
-				width: ;
-				height: ;
-
-				.icono {
-					fill: ;
-				}
-			}
-		}
-	}
-}
-
-.boton-ge {
-	.blink-out;
- 
-	display: inline-block;
-	padding: 15px;
-	// background: @gris-40;
-	border: 3px solid @gris-60;
-	margin-bottom: 100px;
-}
-
-/*************** Botón Arriba ***************/
-.boton-arriba {
-	a:link, a:visited {
-		background:;
-		color:;
-
-		span {
-			color: ;
-		}
-
-		svg {
-			fill: ;
-		}
-
-// Hover
-		&:hover, &:active {
-			background:;
-			color:;
-
-			span {
-				color: ;
-			}
-
-			svg {
-				fill: ;
-			}
-
-		}
-	}
-}
-
 /* 
 UNO
 =============================================================
