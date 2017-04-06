@@ -36,6 +36,7 @@ COLORES
 @verde-light: #b0e439;
 
 @azul: #012549;
+@azul-light: #104b85;
 
 // Redes sociales
 @facebook: #1860aa;
@@ -50,7 +51,7 @@ COLORES
 @livestream: #E31E30;
 
 // Texto de selección
-.text-selection(@blanco, @negro);  
+.text-selection(@blanco, @verde);  
 
 // Page loader
 @pace-back: @rojo;	//Color de la barra
@@ -75,10 +76,11 @@ BOTONES
 .boton {
 	display: inline-block;
 	margin: 10px 0;
-	padding: 10px;
+	padding: 14px;
 	background: @negro;
 	color: @blanco;
 	font-weight: 600;
+	font-size: 1.4rem;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -103,6 +105,20 @@ BOTONES
 
 		&:hover, &:active, &:focus {
 			color: @azul;
+		}
+	}
+
+	&.azul {
+		.rectangle-in;
+		color: @blanco;
+		background: @azul-light;
+
+		&:before {
+			background: @azul;
+		}
+
+		&:hover, &:active, &:focus {
+			color: @blanco;
 		}
 	}
 
