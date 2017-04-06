@@ -36,7 +36,7 @@ COLORES
 @verde-light: #b0e439;
 
 @azul: #023262;
-@azul-light: #104b85;
+@azul-light: #0259a9;
 @azul-dark: #012549;
 
 // Redes sociales
@@ -86,6 +86,7 @@ BOTONES
 	text-decoration: none;
 	text-transform: uppercase;
 	border: 0;
+	cursor: pointer;
 	.transition; 
 
 	&:hover, &:active, &:focus {
@@ -116,6 +117,21 @@ BOTONES
 
 		&:before {
 			background: @azul;
+		}
+
+		&:hover, &:active, &:focus {
+			color: @blanco;
+		}
+	}
+
+	&.blanco {
+		.rectangle-in;
+		color: @azul-light;
+		background: @azul-light;
+		border: 1px solid @azul-light;
+
+		&:before {
+			background: @blanco;
 		}
 
 		&:hover, &:active, &:focus {

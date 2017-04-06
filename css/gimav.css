@@ -131,6 +131,7 @@ BOTONES
   text-decoration: none;
   text-transform: uppercase;
   border: 0;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -211,7 +212,7 @@ BOTONES
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   color: #ffffff;
-  background: #104b85;
+  background: #0259a9;
 }
 .boton.azul:before {
   content: "";
@@ -248,6 +249,59 @@ BOTONES
 .boton.azul:hover,
 .boton.azul:active,
 .boton.azul:focus {
+  color: #ffffff;
+}
+.boton.blanco {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #2098d1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #0259a9;
+  background: #0259a9;
+  border: 1px solid #0259a9;
+}
+.boton.blanco:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e1e1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.boton.blanco:hover,
+.boton.blanco:focus,
+.boton.blanco:active {
+  color: white;
+}
+.boton.blanco:hover:before,
+.boton.blanco:focus:before,
+.boton.blanco:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.boton.blanco:before {
+  background: #ffffff;
+}
+.boton.blanco:hover,
+.boton.blanco:active,
+.boton.blanco:focus {
   color: #ffffff;
 }
 .icono-facebook {
@@ -5420,6 +5474,14 @@ img {
   max-width: 100%;
 }
 /******* Tipografía ******/
+h1 {
+  margin-top: 0;
+  color: #808080;
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.6rem;
+}
 /******* Links ******/
 a,
 a:visited {
@@ -6002,6 +6064,7 @@ HEADER
 header {
   width: 100%;
   z-index: 20;
+  margin-bottom: 40px;
 }
 header .container-fluid {
   padding: 0 40px;
@@ -6089,7 +6152,7 @@ header .navbar-default .navbar-nav li a:visited:active:before {
 }
 header .navbar-default .navbar-nav li a:link:before,
 header .navbar-default .navbar-nav li a:visited:before {
-  background: #104b85;
+  background: #0259a9;
 }
 header .navbar-default .navbar-nav li a:link:hover,
 header .navbar-default .navbar-nav li a:visited:hover,
@@ -6209,6 +6272,32 @@ USUARIO
 #logo-gimav figure {
   display: table-cell;
   vertical-align: middle;
+}
+.cuenta-datos {
+  margin: auto;
+  margin-top: 20px;
+  width: 550px;
+}
+.cuenta-datos p {
+  margin: 20px 0;
+  padding: 14px 20px;
+  color: #808080;
+}
+.cuenta-datos figure {
+  padding: 20px 0;
+  text-align: left;
+}
+.cuenta-datos .boton {
+  margin: 0 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+.eqtiqueta {
+  text-align: right;
+}
+.dato {
+  text-align: left;
+  border-bottom: 1px solid #d1d1d3;
 }
 /* 
 UNO
