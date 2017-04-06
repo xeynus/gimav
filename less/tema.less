@@ -8,7 +8,7 @@ COLORES
 // Colores del sitio
 @negro:		rgba(0,0,0,1);
 @blanco:	#ffffff;
-@rojo:		red;
+@rojo:		#83200d;
 
 @gris-100: @negro;
 @gris-90: lighten(@gris-100, 10%);
@@ -26,11 +26,16 @@ COLORES
 // @gris-80: #636363;
 // @gris-70: #7c7b7b;
 // @gris-60: #999999;
-// @gris-50: #b7b7b7;
+@gris-50: #808080;
 // @gris-40: #cdcdcd;
 // @gris-30: #e6e6e6;
-// @gris-20: #f2f2f2;  
+@gris-20: #d1d1d3;  
 // @gris-10: #f6f6f6;
+
+@verde: #80b801;
+@verde-light: #b0e439;
+
+@azul: #012549;
 
 // Redes sociales
 @facebook: #1860aa;
@@ -54,12 +59,9 @@ COLORES
 TIPOGRAFIA
 =============================================================
 */
-.tipo-titulo {
-	font-family: 'Roboto Slab', serif;
-}
-
-.tipo-texto {
-	font-family: 'Hind', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+.open {
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* 
@@ -76,8 +78,11 @@ BOTONES
 	padding: 10px;
 	background: @negro;
 	color: @blanco;
+	font-weight: 600;
 	text-align: center;
 	text-decoration: none;
+	text-transform: uppercase;
+	border: 0;
 	.transition; 
 
 	&:hover, &:active, &:focus {
@@ -87,12 +92,18 @@ BOTONES
 	}  
 
 // Color
-	&.color {
-		background: ;
+	&.verde {
+		.rectangle-in;
+		color: @azul;
+		background: @verde-light;
+
+		&:before {
+			background: @verde;
+		}
 
 		&:hover, &:active, &:focus {
-			color: ;
-		}  
+			color: @azul;
+		}
 	}
 
 }

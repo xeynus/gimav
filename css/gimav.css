@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 /******************************************************************
 Nombre del sitio: In Serie 5.0
 Autor: Marco Antonio Hernández Pérez
@@ -108,11 +109,8 @@ COLORES
 TIPOGRAFIA
 =============================================================
 */
-.tipo-titulo {
-  font-family: 'Roboto Slab', serif;
-}
-.tipo-texto {
-  font-family: 'Hind', sans-serif;
+.open {
+  font-family: 'Open Sans', sans-serif;
 }
 /* 
 BOTONES
@@ -127,8 +125,11 @@ BOTONES
   padding: 10px;
   background: #000000;
   color: #ffffff;
+  font-weight: 600;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -137,20 +138,64 @@ BOTONES
 .boton:hover,
 .boton:active,
 .boton:focus {
-  color: #cccccc;
+  color: #d1d1d3;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.boton.color {
-  background: ;
+.boton.verde {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #2098d1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #012549;
+  background: #b0e439;
 }
-.boton.color:hover,
-.boton.color:active,
-.boton.color:focus {
-  color: ;
+.boton.verde:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e1e1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.boton.verde:hover,
+.boton.verde:focus,
+.boton.verde:active {
+  color: white;
+}
+.boton.verde:hover:before,
+.boton.verde:focus:before,
+.boton.verde:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.boton.verde:before {
+  background: #80b801;
+}
+.boton.verde:hover,
+.boton.verde:active,
+.boton.verde:focus {
+  color: #012549;
 }
 .icono-facebook {
   background: #1860aa;
@@ -5316,6 +5361,7 @@ body {
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
   color: #000000;
+  font-family: 'Open Sans', sans-serif;
 }
 img {
   max-width: 100%;
@@ -5783,6 +5829,81 @@ TABS
   color: ;
 }
 /*************** Contenido ***************/
+/* 
+LOGIN
+=============================================================
+*/
+#login {
+  background: url('../images/fondo-login.jpg') left top no-repeat;
+  background-size: cover;
+}
+.login-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /*************** Tres ***************/
+}
+.login-container.recuperar {
+  right: inherit;
+  left: 0;
+}
+.login-container p {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+.login-container a:link,
+.login-container a:visited {
+  color: #ffffff;
+}
+.login-container a:link:hover,
+.login-container a:visited:hover,
+.login-container a:link:active,
+.login-container a:visited:active {
+  color: #d1d1d3;
+}
+.login-container form {
+  margin: auto;
+  width: 44%;
+}
+.login-container form input {
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  width: 100%;
+  border: 0;
+  color: #012549;
+}
+.login-container form input :-moz-placeholder {
+  color: #808080;
+}
+.login-container form input ::-moz-placeholder {
+  color: #808080;
+}
+.login-container form input ::-webkit-input-placeholder {
+  color: #808080;
+}
+.login-container form input :-ms-input-placeholder {
+  color: #808080;
+}
+.login-container form button {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.login-container form .error {
+  clear: both;
+}
+.login-container form .error svg {
+  float: left;
+  margin-left: 20px;
+  margin-right: 24px;
+}
+.logo {
+  margin-top: 13%;
+  margin-bottom: 32%;
+  text-align: center;
+}
 /* 
 HEADER
 =============================================================
