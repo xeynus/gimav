@@ -1,0 +1,70 @@
+   /******************************************************************
+Nombre del sitio: In Serie 5.0
+Autor: Marco Antonio Hernández Pérez
+
+Importa todos los archivos en uno solo 
+******************************************************************/
+
+@import "01-base.less";
+@import "02-mobile.less";
+@import "03-mobile-wide.less";
+@import "04-tablet-portrait.less";
+@import "05-tablet.less";
+@import "06-notebook.less";
+@import "07-desktop.less";
+@import "08-widescreen.less";
+@import "09-ultra-widescreen.less";
+
+@import "retina-mobile.less"; 
+@import "retina-tablet.less";
+
+
+/* Mobile landscape */
+@media only screen and (min-width: 480px) {
+	.mobile();
+}
+
+/* Mobile wide */
+@media only screen and (min-width: 600px) {
+	.mobile-wide();
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 768px) {
+	.tablet-portrait();
+}
+
+/* Tablet Widescreen */
+@media only screen and (min-width: 992px) {
+	.tablet();
+}
+
+/* Notebook */
+@media only screen and (min-width: 1030px) {
+	.notebook();
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+	.desktop();
+}
+
+/* Widescreen */
+@media only screen and (min-width: 1440px) {
+	.widescreen();
+}
+
+/*Ultra Widescreen*/
+@media only screen and (min-width: 1600px) {
+	.ultra-widescreen();
+}
+
+/*Mobile Retina*/
+@media only screen and (max-width: 767px) only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+	.retina-mobile();
+}
+
+/*Tablet retina*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.retina-tablet();
+}

@@ -1,0 +1,252 @@
+/*
+Nombre del sitio:	In Serie 5
+Autor:				Marco A. Hernández Pérez
+*/
+
+/*********************
+IMPORTS
+*********************/
+ 
+@import "pace/pace-barber.less"; 
+@import "mixins.less"; 
+@import "html.less";
+@import "bootstrap.less";
+
+/* 
+HEADER
+=============================================================
+*/
+header {
+	// position: fixed;
+	width: 100%;
+	z-index: 20;
+
+// Logo
+	.navbar-brand {
+		// Sólo se cambia el primer valor
+		padding: 6px 15px;
+		height: auto;
+	}
+
+// Toggle
+	.navbar-default {
+		margin-bottom: 0;
+		border: 0;
+
+		.navbar-collapse {
+			margin: 0 -15px;
+		}
+
+		.navbar-nav {
+			margin: 0 -15px;
+
+			li {
+				a:link, a:visited {
+					display: block;
+					padding-left: 30px;
+					padding-right: 30px;
+					background: ;
+					color: ;
+					font-size: ;
+					// .transition(background);
+
+					&:hover, &:active, &:focus {
+						// background: @gris-40;
+						color: ;
+						// .transition(background); 
+					}     
+				}
+
+				&.active {
+					border-bottom: 2px solid @gris-40;
+				}
+
+/*************** Dropdown***************/
+				.dropdown-menu {
+					li {
+						a:link, a:visited {
+							background: ;
+							color: ;
+							.transition();
+							
+							&:hover, &:active, &:focus {
+								background: ;
+								color: ;
+								.transition();
+							}
+						}
+					}
+				}
+			}
+		}
+
+// Botón
+		.navbar-toggle {
+			background: ;
+			border: ;
+			.border-radius(0px);
+			.transition(background);
+
+			.icon-bar {
+				background: ;
+				.transition(background);
+			}
+
+			&:hover {
+				background: ;
+				.transition(background);
+
+				.icon-bar {
+					background:  ;
+					.transition(background);
+				}
+			}
+		}
+	}
+}
+
+/*********************
+HEADER CON REDES SOCIALES
+*********************/  
+#header-redes {
+
+}
+
+/* 
+FOOTER
+=============================================================
+*/
+footer {
+	background: ;
+
+	p {
+		color: ;
+	}
+}
+
+/*************** Columns ***************/
+#footer-columns {
+	padding: ;
+
+	.footer-column {
+
+	}
+
+	a:link, a:visited {
+		color: ;
+
+		&:hover, &:active {
+			color: ;
+			text-decoration: none;
+		}
+	}
+}
+
+/*************** Copyright ***************/
+#copyright {
+	padding: ;
+	background: ;
+	text-align: ;
+
+	p {
+		color: ;
+	}
+
+	a:link, a:visited {
+		color: ;
+
+		&:hover, &:active {
+			color: ;
+			text-decoration: ;
+		}
+	}
+}
+
+.copyright-first {
+
+}
+
+.copyright-second {
+
+}
+
+/*************** Footer redes ***************/
+.footer-redes {
+	li {
+		display: inline-block;
+		margin-right: ;
+
+		a:link, a:visited {
+			background: ;
+
+			svg {
+				width: ;
+				height: ;
+
+				.icono {
+					fill: ;
+				}
+			}
+		}
+	}
+}
+
+.boton-ge {
+	.blink-out;
+ 
+	display: inline-block;
+	padding: 15px;
+	// background: @gris-40;
+	border: 3px solid @gris-60;
+	margin-bottom: 100px;
+}
+
+/*************** Botón Arriba ***************/
+.boton-arriba {
+	a:link, a:visited {
+		background:;
+		color:;
+
+		span {
+			color: ;
+		}
+
+		svg {
+			fill: ;
+		}
+
+// Hover
+		&:hover, &:active {
+			background:;
+			color:;
+
+			span {
+				color: ;
+			}
+
+			svg {
+				fill: ;
+			}
+
+		}
+	}
+}
+
+/* 
+UNO
+=============================================================
+*/
+
+/*********************
+DOS
+*********************/
+
+/*************** Tres ***************/
+
+/*========= Cuatro =========*/
+
+/*::::: Cinco :::::*/
+
+/*··· Seis ···*/
+
+// Siete

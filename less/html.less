@@ -1,0 +1,413 @@
+/* 
+HTML
+=============================================================
+*/
+body {
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+	color: @gris-100;
+}
+    
+img {
+	max-width:100%;
+}
+
+div {
+}
+    
+hr {
+}
+
+/******* Tipografía ******/
+// Encabezados
+h1, h2, h3, h4, h5, h6 {
+	a{
+	}
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+// Párrafo
+article {
+	p {
+
+	}
+
+	li {
+
+	}
+}
+
+p {
+}
+
+b {
+}
+
+i {
+}
+
+small {
+}
+
+abbr {
+}
+
+address {
+}
+
+pre {
+}
+
+// Formato de texto
+strong {
+}
+
+em {
+}
+
+dfn {
+}
+
+code {
+}
+
+samp {
+}
+
+kbd{
+}
+
+var {
+}
+
+//Subscript y Superscript
+sub {
+}
+sup {
+}
+
+// Insertado y borrado
+del {
+}
+
+ins {
+}
+
+// Citas
+q {
+}
+
+blockquote {
+	cite {
+	}
+}
+
+/******* Links ******/
+a, a:visited { 
+
+	/* on hover */
+	&:hover, &:focus {
+	}
+	
+	/* on click */
+	&:active {
+	}
+	
+	/* mobile tap color */
+	&:link {
+	}
+}
+
+*:focus {
+	outline: none;  
+}
+/******* Listas ******/
+// Lista desordenada
+ul {
+	li {
+		a, a:visited { 
+		/* on hover */
+			&:hover, &:focus {
+			}
+			/* on click */
+			&:active {
+			}
+			/* mobile tap color */
+			&:link {
+			}
+		}
+		
+		ul{
+			li {
+			}
+		}
+		ol {  			
+			li {
+			}
+		}
+	}
+}
+
+// Lista ordenada
+ol {
+	
+	li {
+		ul{
+			li {
+			}
+		}
+		ol {  			
+			li {
+			}
+		}
+	}
+}
+
+// Listas de definición
+dl {
+	dt {
+	}
+	dd {
+	}
+}
+
+.lista {
+		counter-reset:li; /* Initiate a counter */
+		margin-left:0; /* Remove the default left margin */
+		padding-left:0;
+
+	li {
+		margin-bottom: 8px;
+
+		position:relative; /* Create a positioning context */
+		margin:0 0 6px 18px; /* Give each list item a left margin to make room for the numbers */
+		padding:4px 0px; /* Add some spacing around the content */
+		list-style:none; /* Disable the normal item numbering */
+
+		&::before {
+			content:counter(li); /* Use the counter as content */
+			counter-increment:li; /* Increment the counter by 1 */
+			/* Position and style the number */
+			position:absolute;
+			top: 0; 
+			left:-18px;
+
+			margin-right:8px;
+			padding:4px 0;
+			color: ;
+			font-weight: 700;
+			text-align:center;
+		}
+
+		a, a:visited { 
+		/* on hover */
+			&:hover, &:focus {
+			}
+			/* on click */
+			&:active {
+			}
+			/* mobile tap color */
+			&:link {
+			}
+		}
+		
+		ul{
+			li {
+			}
+		}
+		ol {  			
+			li {
+			}
+		}
+	}
+}
+
+// Bullets personalizados
+.bullet {
+	padding-left: 22px;
+
+	li {
+		padding-left: 15px;
+		list-style-type: none;
+	}
+
+	&.circulo {
+		li {
+			background: url('../images/bullet-circulo.svg') left 8px no-repeat;
+			background-size: 6px;
+		}
+	}
+
+	&.cuadrado {
+		li {
+			background: url('../images/bullet-cuadrado.svg') left 8px no-repeat;
+			background-size: 6px;
+		}
+	}
+
+	&.triangulo {
+		li {
+			background: url('../images/bullet-triangulo.svg') left 6px no-repeat;
+			background-size: 6px;
+		}
+	}
+
+	&.rombo {
+		li {
+			background: url('../images/bullet-rombo.svg') left 6px no-repeat;
+			background-size: 8px;
+		}
+	}
+
+	&.chevron {
+		li {
+			background: url('../images/bullet-chevron.svg') left 6px no-repeat;
+			background-size: 8px;
+		}
+	}
+	
+}
+/******* Tablas ******/
+table {
+	thead {
+		tr {
+			th{
+			}
+		}
+	}
+
+	tbody {
+		tr {
+			td {
+			}
+		}
+	}
+	
+	tfoot {
+		tr {
+			td {
+			}
+		}
+	}
+	
+	th {
+	}
+	
+	caption {
+	}
+}
+
+// Stripped
+.table-striped > tbody > tr:nth-child(odd) > td {
+	background: ;
+	color: ;
+}
+
+/******* Forms ******/
+form {
+	fieldset {
+	}
+	
+	input[type="checkbox"] {
+	}
+
+	input[type="radio"] {
+	}
+	
+	input[type="submit"],
+	input[type="button"] {
+	}
+	
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="num"],
+	textarea,
+	select {
+	}
+	
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	input[type="tel"],
+	input[type="num"],
+	textarea:focus{
+	}
+	
+	select {
+		optgroup {
+		}
+	}
+
+	label {
+	}
+	
+	legend {
+	}
+
+}
+
+.input-radio(); 
+
+.input-checkbox();
+
+.input-file();
+
+#retro {
+	padding: 15px 0;
+	color: ;
+	font-style: italic;
+}
+
+/*************** Botones de redes sociales ***************/
+.iconos-redes {
+/* Ligas */
+	a:link, a:visited {
+		display: table;
+		text-align: center;
+		.transition(background);
+		
+		padding: 2px; 
+		background: ;
+		.border-radius(200px);
+
+  
+		&:hover, &:active, &:focus {
+			background: ;
+			.transition(background);
+		}
+	}
+
+/* Vectores */
+	svg {
+		display: table-cell;
+		vertical-align: center;
+
+		// Tamaño
+		width: px;
+		height: px;
+		
+		// Color del ícono
+		.icono { 
+			fill: ;
+		}
+	}
+}

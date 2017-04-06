@@ -1,0 +1,44 @@
+/* Icon Forward */
+.icon-forward() {
+	.hacks();
+	position: relative;
+	padding-right: 2.2em;
+	.prefixed(transition-duration, @fastDuration);
+
+	// &:before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	right: 1em;
+	// 	padding: 0 1px;
+	// 	font-family: FontAwesome;
+	// 	.prefixed(transform, translateZ(0));
+	// 	.prefixed(transition-duration, @fastDuration);
+	// 	.prefixed(transition-property, transform);
+	// 	.prefixed(transition-timing-function, ease-out);
+	// }
+
+	span, i {
+		padding: 0 1px;
+		.prefixed(transform, translateZ(0));
+		.prefixed(transition-duration, @fastDuration);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	span, i {
+		
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		// &:before, span, i {
+		// 	.prefixed(transform, translateX(4px));
+		// }
+
+		span, i {
+			.prefixed(transform, translateX(4px));
+		}
+	}
+}

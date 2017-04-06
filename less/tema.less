@@ -1,0 +1,98 @@
+/* 
+TEMA
+=============================================================
+*/
+/*********************
+COLORES
+*********************/
+// Colores del sitio
+@negro:		rgba(0,0,0,1);
+@blanco:	#ffffff;
+@rojo:		red;
+
+@gris-100: @negro;
+@gris-90: lighten(@gris-100, 10%);
+@gris-80: lighten(@gris-100, 20%);
+@gris-70: lighten(@gris-100, 30%);
+@gris-60: lighten(@gris-100, 40%);
+@gris-50: lighten(@gris-100, 50%);
+@gris-40: lighten(@gris-100, 66%);
+@gris-30: lighten(@gris-100, 74%);
+@gris-20: lighten(@gris-100, 80%);
+@gris-10: lighten(@gris-100, 82.5%); 
+
+// @gris-100: #1f1f1f;
+// @gris-90: #434343;
+// @gris-80: #636363;
+// @gris-70: #7c7b7b;
+// @gris-60: #999999;
+// @gris-50: #b7b7b7;
+// @gris-40: #cdcdcd;
+// @gris-30: #e6e6e6;
+// @gris-20: #f2f2f2;  
+// @gris-10: #f6f6f6;
+
+// Redes sociales
+@facebook: #1860aa;
+@twitter: #35a8e0;
+@linkedin: #005794;
+@pinterest: #ca2027;
+@googleplus: #dc4e41;
+@foursquare: #e73e71;
+@instagram: #c22f86;
+@youtube: #e52d27;
+@vimeo: #23B6EA;
+@livestream: #E31E30;
+
+// Texto de selección
+.text-selection(@blanco, @negro);  
+
+// Page loader
+@pace-back: @rojo;	//Color de la barra
+
+/* 
+TIPOGRAFIA
+=============================================================
+*/
+.tipo-titulo {
+	font-family: 'Roboto Slab', serif;
+}
+
+.tipo-texto {
+	font-family: 'Hind', sans-serif;
+}
+
+/* 
+BOTONES
+=============================================================
+*/
+.boton-cont {
+	text-align: center;
+}
+
+.boton {
+	display: inline-block;
+	margin: 10px 0;
+	padding: 10px;
+	background: @negro;
+	color: @blanco;
+	text-align: center;
+	text-decoration: none;
+	.transition; 
+
+	&:hover, &:active, &:focus {
+		color: @gris-20;
+		text-decoration: none;
+		.transition;
+	}  
+
+// Color
+	&.color {
+		background: ;
+
+		&:hover, &:active, &:focus {
+			color: ;
+		}  
+	}
+
+}

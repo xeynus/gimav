@@ -1,0 +1,278 @@
+/*********************
+SLIDER
+*********************/ 
+#slider {
+	// padding-top: 64px;
+	margin-bottom: ;
+
+/*************** Indicadores ***************/
+	.carousel-indicators {
+		margin-left: 0;
+		left: ;
+		right: ;
+		bottom: ;
+		width: auto;
+
+		li {
+			margin-right: 6px;
+			width: 15px;
+			height: 15px;
+			background: @gris-60;
+			border: ;
+			.transition(background);
+
+			&:hover {
+				background: ;
+				.transition(background);
+			}
+		}
+
+		.active {
+			background: @blanco;
+			border: ;
+		}
+	}
+
+/*************** Flechas ***************/
+	.carousel-control {
+		.transition();
+
+		span {
+			display: block;
+			width: ;
+			height: ;
+			background: ;
+
+			&::before {
+			}
+		}
+
+		&:hover, &:active {
+			.transition();
+		}
+
+		&.left {
+			background: 0;
+			
+			span {
+
+			}
+		}
+
+		&.right {
+			background: 0;
+
+			span {
+
+			}
+		}
+	}
+/*************** Efectos ***************/
+// imagen transparente
+	&.color {
+		.item {
+			img {
+				.opacity(0.3); 
+			}
+		}
+	}
+
+	&.carousel-fade {
+	    .carousel-inner {
+	        .item {
+	            transition-property: opacity;
+	        }
+	        
+	        .item,
+	        .active.left,
+	        .active.right {
+	            opacity: 0;
+	        }
+
+	        .active,
+	        .next.left,
+	        .prev.right {
+	            opacity: 1;
+	        }
+
+	        .next,
+	        .prev,
+	        .active.left,
+	        .active.right {
+	            left: 0;
+	            transform: translate3d(0, 0, 0);
+	        }
+	    }
+
+	    .carousel-control {
+	        z-index: 2;
+	    }
+	}
+}
+
+/*************** Slides ***************/
+.item {
+	background: @gris-100;
+
+	.texto {
+		padding: 10px 15px;
+		background: @gris-80;
+		text-align: center;
+	}
+
+	h1 {
+		margin: 0;
+		margin-bottom: 15px;
+		padding: 0;
+		color : @blanco;
+		font-size: 2.2rem;
+		font-weight: 600;
+	}
+
+	p {
+		color: @blanco;
+		font-size: 1.4rem;
+	}
+
+	figure {
+		overflow-y: hidden;
+		text-align: center;
+
+		max-height: 550px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+#slide-1 {
+
+}
+
+#slide-2 {
+
+}
+
+#slide-3 {
+
+}
+/*********************
+MODALES
+*********************/ 
+.modal-dialog {
+
+}
+
+.modal-content {
+	border: ;
+	.border-radius();
+
+}
+
+.modal-header {
+	// Resets
+	border-bottom: 0;
+
+	background: ;
+	
+	.modal-title {
+
+	}
+
+	.close {
+		// Resets
+		opacity: 1;
+
+		span {
+
+		}
+
+		&:hover, &:active, &:focus {
+			
+		}
+	}
+
+}
+
+.modal-body {
+
+}
+
+.modal-footer {
+	// Resets
+	border-top: 0;
+}
+
+// Transparencia
+.modal-backdrop {
+	&.in {
+
+	}
+}
+
+/*********************
+TABS
+*********************/ 
+/*************** Botones ***************/
+.nav-tabs {
+	border-bottom: 0;
+
+	li {
+		a {
+			// Resets
+			margin-right: 0;
+			border: 0;
+			.border-radius(0);
+			
+			// Modificar
+			padding: ;
+			background: ;
+			color: ;
+			width: ;
+			font-size: ;
+
+			&:hover, &:active, &:focus {
+				// Resets
+				border: 0;
+				
+				// Modificar
+				background: ;
+				color: ;
+			}
+		}  
+
+// Última tab
+		&:last-child {
+			a {
+				
+			}
+		}
+
+// Activa
+		&.active {
+			a {
+				// Resets
+				border: 0;
+
+				// Modificar
+				background: ;
+				color: ;
+
+				&:hover, &:active, &:focus {
+					// Rsets
+					border: 0;
+
+					// Modificar
+					background: ;
+					color: ;
+				}
+			}
+		}
+	}
+}
+
+/*************** Contenido ***************/
+.tab-content {
+
+}
