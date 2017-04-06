@@ -158,7 +158,7 @@ BOTONES
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  color: #012549;
+  color: #023262;
   background: #b0e439;
 }
 .boton.verde:before {
@@ -196,7 +196,7 @@ BOTONES
 .boton.verde:hover,
 .boton.verde:active,
 .boton.verde:focus {
-  color: #012549;
+  color: #023262;
 }
 .boton.azul {
   display: inline-block;
@@ -243,7 +243,7 @@ BOTONES
   transform: scale(0);
 }
 .boton.azul:before {
-  background: #012549;
+  background: #023262;
 }
 .boton.azul:hover,
 .boton.azul:active,
@@ -5965,7 +5965,7 @@ LOGIN
   padding: 15px 30px;
   width: 100%;
   border: 0;
-  color: #012549;
+  color: #023262;
 }
 .login-container form input :-moz-placeholder {
   color: #808080;
@@ -6009,6 +6009,7 @@ header .navbar-brand {
 }
 header .navbar-default {
   margin-bottom: 0;
+  background: #023262;
   border: 0;
 }
 header .navbar-default .navbar-collapse {
@@ -6026,7 +6027,7 @@ header .navbar-default .navbar-nav li a:visited {
   padding-left: 30px;
   padding-right: 30px;
   background: ;
-  color: ;
+  color: #ffffff;
   font-size: ;
 }
 header .navbar-default .navbar-nav li a:link:hover,
@@ -6037,8 +6038,18 @@ header .navbar-default .navbar-nav li a:link:focus,
 header .navbar-default .navbar-nav li a:visited:focus {
   color: ;
 }
+header .navbar-default .navbar-nav li a:link svg,
+header .navbar-default .navbar-nav li a:visited svg {
+  fill: #ffffff;
+}
 header .navbar-default .navbar-nav li.active {
   border-bottom: 2px solid #a8a8a8;
+}
+header .navbar-default .navbar-nav li .dropdown-menu {
+  background: #023262;
+}
+header .navbar-default .navbar-nav li .dropdown-menu li {
+  display: block;
 }
 header .navbar-default .navbar-nav li .dropdown-menu li a:link,
 header .navbar-default .navbar-nav li .dropdown-menu li a:visited {
@@ -6061,6 +6072,10 @@ header .navbar-default .navbar-nav li .dropdown-menu li a:visited:focus {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+header .navbar-default .navbar-nav li.open a:link {
+  background: #012549;
+  color: #ffffff;
 }
 header .navbar-default .navbar-toggle {
   background: ;

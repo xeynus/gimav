@@ -148,6 +148,7 @@ header {
 // Toggle
 	.navbar-default {
 		margin-bottom: 0;
+		background: @azul;
 		border: 0;
 
 		.navbar-collapse {
@@ -163,7 +164,7 @@ header {
 					padding-left: 30px;
 					padding-right: 30px;
 					background: ;
-					color: ;
+					color: @blanco;
 					font-size: ;
 					// .transition(background);
 
@@ -171,7 +172,11 @@ header {
 						// background: @gris-40;
 						color: ;
 						// .transition(background); 
-					}     
+					}  
+
+					svg {
+						fill: @blanco;
+					}   
 				}
 
 				&.active {
@@ -180,7 +185,10 @@ header {
 
 /*************** Dropdown***************/
 				.dropdown-menu {
+					background: @azul;
 					li {
+						display: block;
+
 						a:link, a:visited {
 							background: ;
 							color: ;
@@ -192,6 +200,13 @@ header {
 								.transition();
 							}
 						}
+					}
+				}
+
+				&.open {
+					a:link {
+						background: @azul-dark;
+						color: @blanco;
 					}
 				}
 			}
