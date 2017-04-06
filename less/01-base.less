@@ -319,6 +319,28 @@ USUARIO
 		margin-top: 20px;
 		width: 100%;
 	}
+
+	input {
+		margin: 20px 0;
+		padding: 14px 20px;
+		width: 100%;
+		background: @gris-10;
+		color: @gris-50;
+		border: 0;
+	}
+}
+
+.botones-cont {
+	margin: auto;
+	width: 760px;
+
+	.boton {
+		width: 330px;
+
+		&:first-child {
+			margin-right: 60px;
+		}
+	}
 }
 
 .eqtiqueta {
@@ -328,6 +350,43 @@ USUARIO
 .dato {
 	text-align: left;
 	border-bottom: 1px solid @gris-20;
+}
+
+.subir-imagen {
+	display: table;
+
+	figure, .upload-file, .formato {
+		display: table-cell;
+	}
+
+	.upload-file .inputfile + label {
+		padding: 20px 5px;
+		margin-bottom: 0;
+		width: 230px;
+		background: @gris-10;
+		color: @gris-50;
+		font-weight: 400;
+		vertical-align: middle;
+		.transition(background);
+
+		&:hover {
+			background: @gris-20;
+			.transition(background);
+		}
+	}
+
+	.upload-file .inputfile + label .archivo-subido {
+		display: none;
+	}
+
+	.formato {
+		padding-left: 10px;
+		color: @gris-50;
+	}
+
+	.archivo-subido {
+		display: none;
+	}
 }
 /* 
 UNO

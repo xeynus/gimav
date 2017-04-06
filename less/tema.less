@@ -8,7 +8,9 @@ COLORES
 // Colores del sitio
 @negro:		rgba(0,0,0,1);
 @blanco:	#ffffff;
+
 @rojo:		#83200d;
+@rojo-light: #b52d15;
 
 @gris-100: @negro;
 @gris-90: lighten(@gris-100, 10%);
@@ -30,7 +32,7 @@ COLORES
 // @gris-40: #cdcdcd;
 // @gris-30: #e6e6e6;
 @gris-20: #d1d1d3;  
-// @gris-10: #f6f6f6;
+@gris-10: #e9e9e9;
 
 @verde: #80b801;
 @verde-light: #b0e439;
@@ -117,6 +119,34 @@ BOTONES
 
 		&:before {
 			background: @azul;
+		}
+
+		&:hover, &:active, &:focus {
+			color: @blanco;
+		}
+	}
+
+	&.azul-claro {
+		.rectangle-in;
+		color: @blanco;
+		background: @azul;
+
+		&:before {
+			background: @azul-light;
+		}
+
+		&:hover, &:active, &:focus {
+			color: @blanco;
+		}
+	}
+
+	&.rojo {
+		.rectangle-in;
+		color: @blanco;
+		background: @rojo-light;
+
+		&:before {
+			background: @rojo;
 		}
 
 		&:hover, &:active, &:focus {

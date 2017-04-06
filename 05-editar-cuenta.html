@@ -8,7 +8,7 @@
 <!-- Necesidades básicas de la página
  ================================================== -->
 <meta charset="utf-8">
-<title>Gimav picture - Login</title>
+<title>Editar cuenta</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -46,9 +46,10 @@
 
 <body id="usuario">
 
-<!--*********************
+<!--
 HEADER
-*********************-->
+=============================================================
+-->
 <header id="header">
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -123,9 +124,84 @@ HEADER
 	</nav>
 </header>
 
-<section id="logo-gimav">
-	<figure><img src="images/logo-gimav-color.png" alt="Logo Gimav"></figure>
+<!--
+MI CUENTA
+=============================================================
+-->
+<section id="mi-cuenta" class="text-center">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Mi cuenta</h1>
+
+				<form action="">
+					<section class="cuenta-datos">
+					
+						<div class="row">
+
+<!-- Nombre -->
+							<div class="col-md-4 text-right">
+								<p class="etiqueta">Nombre*</p>
+							</div>
+							<div class="col-md-8">
+								<input type="text" required>
+							</div>
+						</div>
+<!-- Email -->
+						<div class="row">
+							<div class="col-md-4 text-right">
+								<p class="etiqueta">Email*</p>
+							</div>
+							<div class="col-md-8">
+								<input type="email" required>
+							</div>
+						</div>
+
+<!-- Teléfono -->
+						<div class="row">
+							<div class="col-md-4 text-right">
+								<p class="etiqueta">Teléfono</p>
+							</div>
+							<div class="col-md-8">
+								<input type="tel">
+							</div>
+						</div>
+
+<!-- Imagen -->
+						<div class="row">
+							<div class="col-md-4 text-right">
+								<p class="etiqueta">Imagen de perfil</p>
+							</div>
+							<div class="col-md-8">
+								<div class="subir-imagen">
+									<figure><img src="images/perfil-genereico.jpg" alt="Imagen de perfil genérico"></figure>
+
+									<div class="upload-file">
+										<input type="file" name="file[]" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+
+										<label for="file">Selecciona un archivo <span class="archivo-subido"></span></label>
+										
+									</div>
+
+									<span class="formato">jpg o png</span>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="botones-cont">
+						<buton class="boton rojo">Cancelar</buton>
+						<buton class="boton azul-claro">Guardar cambios</buton>
+					</section>
+				</form>
+
+				
+			</div>
+		</div>
+	</div>
 </section>
+
+<script type="text/javascript" src="js/custom-file-input.js"></script>
 
 </body>
 
