@@ -5644,6 +5644,9 @@ body {
 img {
   max-width: 100%;
 }
+hr {
+  margin: 10px 0;
+}
 /******* Tipografía ******/
 h1 {
   margin-top: 0;
@@ -5773,8 +5776,17 @@ table tbody tr:hover {
   -o-transition: background 0.3s ease-out;
   transition: background 0.3s ease-out;
 }
-.ancho-justo td {
+.ancho-justo th {
   width: 16.6666666%;
+}
+.ancho-justo.iconos {
+  table-layout: fixed;
+}
+.ancho-justo.iconos th {
+  width: 22%;
+}
+.ancho-justo.iconos .celda-icono {
+  width: 6%;
 }
 .nums td {
   font-size: 1.8rem;
@@ -5789,6 +5801,9 @@ table tbody tr:hover {
   -o-border-radius: 6px;
   border-radius: 6px;
   behavior: url(PIE.htc);
+}
+.table-cont.first {
+  margin-top: 0;
 }
 .borrar-admin {
   cursor: pointer;
@@ -5813,6 +5828,32 @@ table tbody tr:hover {
 }
 .borrar-admin:hover svg {
   fill: #e75b5f;
+}
+.configurar {
+  cursor: pointer;
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.configurar:hover,
+.configurar:focus,
+.configurar:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.configurar svg {
+  width: 21px;
+  fill: #027aea;
+}
+.configurar:hover svg {
+  fill: #30a5f6;
 }
 .table-striped > tbody > tr:nth-child(odd) > td {
   background: ;
@@ -6167,6 +6208,11 @@ MODALES
 .modal-body p {
   text-align: center;
   color: #808080;
+}
+.modal-body .cuenta-datos p,
+.modal-body .cuenta-datos input,
+.modal-body .cuenta-datos select {
+  margin: 10px 0;
 }
 .modal-footer {
   border-top: 1px solid #e9e9e9;
@@ -6699,6 +6745,42 @@ USUARIO
   color: #808080;
   border: 0;
 }
+.cuenta-datos .select {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+.cuenta-datos .select span {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  display: block;
+  padding-right: 20px;
+  padding-top: 16px;
+  height: 48px;
+  background: #e9e9e9;
+  pointer-events: none;
+  z-index: 2;
+}
+.cuenta-datos .select svg {
+  width: 16px;
+  fill: #808080;
+}
+.cuenta-datos select {
+  margin: 20px 0;
+  width: 100%;
+  height: 48px;
+  background: #e9e9e9;
+  color: #808080;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  behavior: url(PIE.htc);
+  box-sizing: content-box;
+}
 .cuenta-datos :-moz-placeholder {
   color: #a8a8a8;
 }
@@ -6788,9 +6870,13 @@ USUARIO
   min-height: 138px;
   border-right: 1px solid #e9e9e9;
 }
+.form-bloque.single {
+  min-height: inherit;
+}
 .form-bloque .form-group {
   display: table;
   position: relative;
+  margin: 5px 0;
   width: 100%;
 }
 .form-bloque label {
@@ -6841,6 +6927,7 @@ USUARIO
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
   pointer-events: none;
+  z-index: 2;
 }
 .form-bloque svg {
   fill: #ffffff;

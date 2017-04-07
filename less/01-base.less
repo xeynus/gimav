@@ -329,6 +329,42 @@ USUARIO
 		border: 0;
 	}
 
+	.select {
+		position: relative;
+		display: table;
+		width: 100%;
+
+		span {
+			position: absolute;
+			right: 0;
+			top: 10px;
+			display: block;
+			padding-right: 20px; 
+			padding-top: 16px;
+			height: 48px;
+			background: @gris-10;
+			pointer-events: none;
+			z-index: 2;
+		}
+
+		svg {
+			width: 16px;
+			fill: @gris-50;
+		}
+	}
+
+	select {
+		margin: 20px 0;
+		// padding: 14px 20px;
+		width: 100%;
+		height: 48px;
+		background: @gris-10;
+		color: @gris-50;
+		border: 0;
+		.border-radius(0);
+		 box-sizing: content-box;
+	}
+
 	.placeholder(@gris-40);
 }
 
@@ -418,9 +454,14 @@ USUARIO
 	border-right: 1px solid @gris-10;
 	// display: table;
 
+	&.single {
+		min-height: inherit;
+	}
+
 	.form-group {
 		display: table;
 		position: relative;
+		margin: 5px 0;
 		width: 100%;
 	}
 
@@ -462,6 +503,7 @@ USUARIO
 		background: #c8c8c8;
 		.border-radius-right();
 		pointer-events: none;
+		z-index: 2;
 	}
 
 	svg {

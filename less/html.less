@@ -17,6 +17,7 @@ div {
 }
     
 hr {
+	margin: 10px 0;
 }
 
 /******* Tipografía ******/
@@ -333,6 +334,7 @@ table {
 				background: lighten(@gris-10, 5%);
 				.transition(background);
 			}
+
 		}
 	}
 	
@@ -351,8 +353,20 @@ table {
 }
 
 .ancho-justo {
-	td {
+	th {
 		width: 16.6666666%;
+	}
+
+	&.iconos {
+		table-layout: fixed;
+
+		th {
+			width: 22%;
+		}
+		
+		.celda-icono {
+			width: 6%;
+		}
 	}
 }
 
@@ -367,6 +381,10 @@ table {
 	margin: 40px 10px 20px 10px; 
 	border: 1px solid @gris-20;
 	.border-radius();
+
+	&.first {
+		margin-top: 0;
+	}
 }
 
 .borrar-admin {
@@ -380,6 +398,24 @@ table {
 	&:hover {
 		svg {
 			fill: #e75b5f;
+		}
+	}
+
+}
+
+.configurar {
+	cursor: pointer;
+	text-align: right;
+	.grow;
+
+	svg {
+		width: 21px;
+		fill: #027aea;
+	}
+
+	&:hover {
+		svg {
+			fill: #30a5f6;
 		}
 	}
 
