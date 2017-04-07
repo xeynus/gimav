@@ -311,12 +311,14 @@ table {
 		tr {
 			td {
 				padding: 10px;
+				background: transparent;
 				color: @gris-50;
 				border: 1px solid @gris-10;
 				border-right: 0;
 				border-left: 0;
+				.transition(background);
 
-				&.admin-nombre {
+				&.realce {
 					color: @azul-light;
 				}
 			}
@@ -325,6 +327,11 @@ table {
 				td {
 					border-bottom: 0;
 				}
+			}
+
+			&:hover {
+				background: lighten(@gris-10, 5%);
+				.transition(background);
 			}
 		}
 	}
@@ -340,6 +347,19 @@ table {
 	}
 	
 	caption {
+	}
+}
+
+.ancho-justo {
+	td {
+		width: 16.6666666%;
+	}
+}
+
+.nums {
+	td {
+		font-size: 1.8rem;
+		font-weight: 600;
 	}
 }
 

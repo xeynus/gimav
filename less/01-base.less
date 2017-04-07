@@ -409,7 +409,64 @@ USUARIO
 }
 
 .confirmacion {
-	margin: 40px 0;
+	margin: 40px 0;  
+}
+
+.form-bloque {
+	padding: 20px 20px;
+	min-height: 138px;
+	border-right: 1px solid @gris-10;
+	// display: table;
+
+	.form-group {
+		display: table;
+		position: relative;
+		width: 100%;
+	}
+
+	label {
+		width: 85px;
+		color: @gris-50;
+		font-weight: 400;
+		text-align: right;
+		display: table-cell;
+	}
+
+	input {
+		padding: 6px;
+		width: 88%;
+		// text-align: center;
+		color: @gris-50;
+		border: 1px solid @gris-10;
+		.border-radius();
+		display: table-cell;
+	}
+
+	select {
+		height: 34px;
+		width: 88%;
+		background: @blanco;
+		color: @gris-50;
+		// text-align: center;
+		border: 1px solid @gris-10;
+		.border-radius();
+		display: table-cell;
+	}
+
+	span {
+		position: absolute;
+		right: 4%;
+		height: 34px;
+		padding: 0 8px;
+		padding-top: 5px;
+		background: #c8c8c8;
+		.border-radius-right();
+		pointer-events: none;
+	}
+
+	svg {
+		fill: @blanco;
+	}
 }
 
 

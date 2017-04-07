@@ -150,4 +150,7 @@ VARIOS
     //         );
     //     });
     // }
+
+    $('#desde').datepicker();
+    $('#hasta').datepicker();
 });
