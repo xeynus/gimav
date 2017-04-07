@@ -169,4 +169,23 @@ BOTONES
 		}
 	}
 
+	&.gris {
+		.rectangle-in;
+		padding: 10px 20px;
+		color: @gris-50;
+		background: @gris-20;
+		font-size: 1.3rem;
+		border: 1px solid @gris-20;
+		.border-radius(8px);
+
+		&:before {
+			background: @blanco;
+			.border-radius(8px);
+		}
+
+		&:hover, &:active, &:focus {
+			color: @gris-80;
+		}
+	}
+
 }

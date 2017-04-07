@@ -166,7 +166,7 @@ MODALES
 
 .modal-content {
 	border: ;
-	.border-radius();
+	.border-radius(8px);
 
 }
 
@@ -175,9 +175,12 @@ MODALES
 	border-bottom: 0;
 
 	background: ;
+	.border-radius-top(8px);
 	
 	.modal-title {
-
+		color: @blanco;
+		font-size: 1.6rem;
+		text-align: center;
 	}
 
 	.close {
@@ -191,23 +194,35 @@ MODALES
 		&:hover, &:active, &:focus {
 			
 		}
+	}  
+
+	&.azul-claro {
+		background: @azul-light;
+	}
+
+	&.rojo {
+		background: @rojo;
 	}
 
 }
 
 .modal-body {
+	p {
+		text-align: center;
+		color: @gris-50;
+	}
 
 }
 
 .modal-footer {
 	// Resets
-	border-top: 0;
+	border-top: 1px solid @gris-10;
 }
 
 // Transparencia
 .modal-backdrop {
 	&.in {
-
+		opacity: .8;
 	}
 }
 
