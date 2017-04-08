@@ -361,9 +361,12 @@ USUARIO
 	}
 
 	select {
+		appearance:button;
+		-moz-appearance:button; /* Firefox */
+		-webkit-appearance:button;
 		margin: 20px 0;
-		// padding: 14px 20px;
-		width: 100%;
+		padding: 0px 10px;
+		width: 94%;
 		height: 48px;
 		background: @gris-10;
 		color: @gris-50;
@@ -465,6 +468,10 @@ USUARIO
 	border-right: 1px solid @gris-10;
 	// display: table;
 
+	.form-group:first-child {
+		margin-bottom: 20px;
+	}
+
 	&.single {
 		min-height: inherit;
 	}
@@ -495,6 +502,10 @@ USUARIO
 	}
 
 	select {
+		appearance:button;
+		-moz-appearance:button; /* Firefox */
+		-webkit-appearance:button;
+		padding: 0 10px;
 		height: 34px;
 		width: 88%;
 		background: @blanco;
@@ -503,6 +514,12 @@ USUARIO
 		border: 1px solid @gris-10;
 		.border-radius();
 		display: table-cell;
+		.transition(background);
+
+		&:hover {
+			background: @gris-10;
+			.transition(background);
+		}
 	}
 
 	span {
@@ -519,6 +536,17 @@ USUARIO
 
 	svg {
 		fill: @blanco;
+	}
+
+	#desde, #hasta {
+		background: @blanco;
+		cursor: pointer;
+		.transition(background);
+
+		&:hover {
+			background: @gris-10;
+			.transition(background);
+		}
 	}
 }
 
