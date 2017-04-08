@@ -126,7 +126,7 @@ BOTONES
   background: #000000;
   color: #ffffff;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -369,6 +369,7 @@ BOTONES
   transition-duration: 0.3s;
   color: #0259a9;
   background: #0259a9;
+  text-transform: none;
   border: 1px solid #0259a9;
 }
 .boton.blanco:before {
@@ -5788,6 +5789,9 @@ table tbody tr:hover {
 .ancho-justo.iconos .celda-icono {
   width: 6%;
 }
+.ancho-justo-9 th {
+  width: 11.111111%;
+}
 .nums td {
   font-size: 1.8rem;
   font-weight: 600;
@@ -5860,6 +5864,9 @@ table tbody tr:hover {
   color: ;
 }
 /******* Forms ******/
+form select {
+  cursor: pointer;
+}
 .radio-button label {
   display: inline-block;
   cursor: pointer;
@@ -6737,6 +6744,11 @@ USUARIO
   margin-top: 20px;
   width: 100%;
 }
+.cuenta-datos .boton.sin-margen {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .cuenta-datos input {
   margin: 20px 0;
   padding: 14px 20px;
@@ -6749,6 +6761,7 @@ USUARIO
   position: relative;
   display: table;
   width: 100%;
+  color: #808080;
 }
 .cuenta-datos .select span {
   position: absolute;
@@ -6792,6 +6805,9 @@ USUARIO
 }
 .cuenta-datos :-ms-input-placeholder {
   color: #a8a8a8;
+}
+.texto-nueva-localidad {
+  font-size: 1.3rem;
 }
 .botones-cont {
   margin: auto;

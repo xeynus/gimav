@@ -318,6 +318,12 @@ USUARIO
 		margin: 0 20px;
 		margin-top: 20px;
 		width: 100%;
+
+		&.sin-margen {
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
 	}
 
 	input {
@@ -333,6 +339,7 @@ USUARIO
 		position: relative;
 		display: table;
 		width: 100%;
+		color: @gris-50;
 
 		span {
 			position: absolute;
@@ -366,6 +373,10 @@ USUARIO
 	}
 
 	.placeholder(@gris-40);
+}
+
+.texto-nueva-localidad {
+	font-size: 1.3rem;
 }
 
 .botones-cont {
